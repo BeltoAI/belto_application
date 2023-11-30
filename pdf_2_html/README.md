@@ -10,3 +10,7 @@ npm init -y
 npm install request
 
 ------------------------------------------------------------------------------------------------
+
+To run the application
+
+node app.js
