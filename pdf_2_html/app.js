@@ -1,6 +1,3 @@
-// API KEY :
-//  michaelvj.132@gmail.com_ffae4a2239b935121f9449adec8d4a059d340b21f73cd8703f231ebb60e8eb9c4cef4947
-
 
 let key = "##########################"; // Your pdf.co API KEY
 
