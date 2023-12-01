@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belto AI - Extended Information Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="belto-ai-body">
+    <div class="container">
+        <video autoplay loop muted playsinline id="bg-video">
+            <source src="planet_-_72540 (Original).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <div class="nav-spacing"></div>
+            <a href="index.html" class="nav-button"><i class="fas fa-home icon-space"></i><span class="gold">H</span>OME</a>
+            <a href="about.html" class="nav-button"><i class="fas fa-info-circle icon-space"></i><span class="gold">A</span>BOUT</a>
+            <a href="products.html" class="nav-button"><i class="fas fa-box icon-space"></i><span class="gold">P</span>RODUCTS</a>
+            <a href="team.html" class="nav-button"><i class="fas fa-users icon-space"></i><span class="gold">T</span>EAM</a>
+            <a href="contact.html" class="nav-button"><i class="fas fa-envelope icon-space"></i><span class="gold">C</span>ONTACT</a>
+            <a href="cart.html" class="nav-button cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span><span class="gold">S</span>HOPPING <span class="gold">C</span>ART</span>
+            </a>
+            <div class="menu-spacing"></div>
+            <a href="signin.html" class="nav-button sign-in">
+                <i class="fas fa-sign-in-alt"></i>
+                <span class="gold">SIGN IN</span>
+            </a>
+            <div class="menu-logo">
+                <img src="logo.png" alt="logo.png">
+            </div>
+        </div>
+        <h1 class="title">Extended Information Form</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="file" id="fileInput" accept=".jpg, .jpeg, .png, .pdf" required class="file-input" onchange="checkInput('file')">
+            <input type="text" name="firstName" placeholder="First Name" required class="text-input">
+            <input type="text" name="lastName" placeholder="Last Name" required class="text-input">
+            <input type="date" name="dob" required class="text-input">
+            <input type="text" name="houseNumber" placeholder="House Number" required class="text-input">
+            <input type="text" name="street" placeholder="Street" required class="text-input">
+            <input type="text" name="state" placeholder="State" required class="text-input">
+            <input type="text" name="zipCode" placeholder="Zip Code" required class="text-input">
+            <input type="text" name="city" placeholder="City" required class="text-input">
+            <input type="tel" name="phone" placeholder="Phone Number" required class="text-input">
+            <div class="camera-container">
+                <label for="cameraInput">Take a Picture:</label>
+                <input type="file" id="cameraInput" name="camera" accept="image/*" capture="user" onchange="checkInput('camera')">
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="handFilled" name="handFilled">
+                <label for="handFilled">This form was filled out by hand</label>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
