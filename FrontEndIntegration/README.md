@@ -40,6 +40,17 @@ node fromPdf-to-text.js
 
 
 
+-----------------------------------------------------------------------
+
+
+Changed the host from Localhost 3000 to the replit cloud URL:
+
+ `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`
+
+Index.html and styles are in the public folder, including images for the design.
+
+
+
 
 
 
