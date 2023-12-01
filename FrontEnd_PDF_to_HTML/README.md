@@ -39,6 +39,13 @@ RUN THE COMMAND
 node fromPdf-to-text.js
 
 
+--------------------------------------------------------------
+
+DONT FUCK UP THE API KEY FORMAT
+
+PDF to HTML Service is now added - resulting HTML file goes to output folder
+
+
 
 
 
