@@ -23,7 +23,7 @@ node app.js
 
 
 ---> after running this command in the terminal
----> go to browser localhost:3000
+---> go to browser {url}:3000
 ---> you will see a file input html front end webpage (index.html)
 ---> the input file is temporarily stored in uploads folder
 
