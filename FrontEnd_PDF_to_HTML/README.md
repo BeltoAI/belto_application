@@ -22,17 +22,19 @@ YOU CAN START THE FRONT-END APPLICATION WITH COMMAND
 node app.js
 
 
----> after running this command in the terminal
----> go to browser {url}:3000
----> you will see a file input html front end webpage (index.html)
----> the input file is temporarily stored in uploads folder
+--> after running this command 
+--> go to browser {url}:3000
+--> you will see a file input html front end webpage (index.html)
+--> the input file is temporarily stored in uploads folder
 
 ----------------------------------------------------------------
 
 TRY OUT THE IMG TO TEXT API AND MACHINE LEARNING ALGORITHM IN THE
 fromPdf-to-text.js FILE
 
-MAKE SURE YOU HAVE AN PNG OR JPEG IMAGE IN ROOT FOLDER OR YOU CAN USE THE IMAGE SUBMITTED IN THE FRONT-END FILE INPUT
+MAKE SURE YOU HAVE AN PNG OR JPEG IMAGE IN ROOT FOLDER
+
+THIS USES THE tesseract.js and natural.js API's
 
 RUN THE COMMAND 
 
