@@ -1,4 +1,4 @@
-package x.web3central.belto.service1;
+package service1;
 
 
 public class Span {
