@@ -18,17 +18,15 @@ public class Base64ToPDF {
 		
 		String projectDirectory = System.getProperty("user.dir"); // Get the project directory
 		// Specify the target directory
-        String targetDirectory = projectDirectory + File.separator + "target";
-        String outputFolder = targetDirectory + File.separator + "output"; // Specify the output folder (assuming it's named "output" in this example)
+        	String targetDirectory = projectDirectory + File.separator + "target";
+        	String outputFolder = targetDirectory + File.separator + "output"; // Specify the output folder (assuming it's named "output" in this example)
         
-        // Create the output folder if it doesn't exist
-        File outputFolderFile = new File(outputFolder);
-        if (!outputFolderFile.exists()) {
-            outputFolderFile.mkdir();
-        }
+        	// Create the output folder if it doesn't exist
+        	File outputFolderFile = new File(outputFolder);
+        	if (!outputFolderFile.exists()) {
+            	outputFolderFile.mkdir();
+        	}
         
-        
-       
 		this.output_path = outputFolder + File.separator; // Set instance value for output_path
 		this.base64_string = b64; // Set instance value for base64_string
 		this.pdfData = Base64.getDecoder().decode(b64); // Set instance value for pdfData by decoding Base64 string to binary data
