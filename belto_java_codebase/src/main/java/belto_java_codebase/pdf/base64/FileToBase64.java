@@ -24,7 +24,7 @@ public class FileToBase64 {
     }
 
 
-    // Private method to convert the file to Base64
+    // private method to convert the file to Base64
     private void convertFileToBase64(File file) throws IOException {
         try (FileInputStream fileInputStream = new FileInputStream(file)) {
             // Extract the content of the file as bytes
