@@ -15,7 +15,7 @@ public class App {
 		// This is the name we will give the pdf file
 		String fileName = "fulldemo.pdf";
 
-		// This is where we use convert the base64 to a pdf file 
+		// This is where we convert the base64 to a pdf file 
 		// I wrote the code for that in the Base64ToPDF class and this is how we use it
 		// We create an object of the Base64ToPDF class and pass the base64 String and fileName as arguements 
 		// We use that object to implement the base64 to pdf file code we've written
