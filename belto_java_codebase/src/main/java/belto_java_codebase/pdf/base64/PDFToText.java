@@ -49,13 +49,23 @@ public class PDFToText {
 	
 	
 	
+	
+
+	
+	  /*
+
+            Commented out the main method 
+	    Entry point for the application is App.java
+
+
 	public static void main(String[] args) throws IOException {
 		PDFToText pdf2txt = new PDFToText("javasample.pdf");
 		pdf2txt.parseText();
 		String txt = pdf2txt.getUnstructuredText();
 		System.out.println(txt);
 	}
-	 
+    
+        */
 	 
 
 	
