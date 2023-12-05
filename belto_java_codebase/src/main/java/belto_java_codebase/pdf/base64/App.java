@@ -1,6 +1,8 @@
 package belto_java_codebase.pdf.base64;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
 public class App {
 
@@ -40,8 +42,13 @@ public class App {
 		// This is the text from the pdf file
 		String txt = pdf2txt.getUnstructuredText();
 
-		// Print the text to the console
-		System.out.println(txt);
+		pdf2txt.extractFormData(); // call method to extract form fields/values
+		
+		Map<String, String> key_value_pairs = pdf2txt.getKeyValuePairs(); // get the key-value pairs and store it inside a Map<>
+		
+		for(Map.Entry<String, String> entry : key_value_pairs.entrySet()) { // Iterate over the map and print all the key-value pairs
+			System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue()); // print form fields and values to console
+		}
 
 	}
 
